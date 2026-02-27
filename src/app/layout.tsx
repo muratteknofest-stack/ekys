@@ -1,21 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import { BackgroundAudio } from "@/components/layout/background-audio";
 import { AudioToggle } from "@/components/layout/audio-toggle";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { BottomNav } from "@/components/layout/bottom-nav";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "MEB EKYS 2026 | Sınav Hazırlık Platformu",
@@ -36,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="tr" className="dark" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className="antialiased">
         <ThemeProvider>
           <BackgroundAudio />
           <AudioToggle />
