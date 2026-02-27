@@ -1,26 +1,107 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-background: var(--bg);
+  --color-foreground: var(--fg);
+  --color-primary: #3b82f6;
+  --color-secondary: #8b5cf6;
+  --color-accent: var(--accent);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-fg);
+  --color-border: var(--border);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* ===== DARK THEME (Default) ===== */
+:root,
+.dark {
+  --bg: #050505;
+  --fg: #f8fafc;
+  --card: #111111;
+  --card-fg: #ffffff;
+  --border: #222222;
+  --muted: #64748b;
+  --accent: #3b82f6;
+  --glass-bg: rgba(255, 255, 255, 0.03);
+  --glass-border: rgba(255, 255, 255, 0.05);
+  --glass-dark-bg: rgba(0, 0, 0, 0.4);
+  --glass-dark-border: rgba(255, 255, 255, 0.08);
+  --input-bg: rgba(15, 23, 42, 0.5);
+  --input-border: #334155;
+  --subtle-glow: rgba(59, 130, 246, 0.15);
+}
+
+/* ===== LIGHT THEME ===== */
+.light {
+  --bg: #f8fafc;
+  --fg: #0f172a;
+  --card: #ffffff;
+  --card-fg: #0f172a;
+  --border: #e2e8f0;
+  --muted: #94a3b8;
+  --accent: #2563eb;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(0, 0, 0, 0.08);
+  --glass-dark-bg: rgba(255, 255, 255, 0.85);
+  --glass-dark-border: rgba(0, 0, 0, 0.1);
+  --input-bg: rgba(241, 245, 249, 0.8);
+  --input-border: #cbd5e1;
+  --subtle-glow: rgba(37, 99, 235, 0.08);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@layer utilities {
+  .glass {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+  }
+
+  .glass-dark {
+    background: var(--glass-dark-bg);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-dark-border);
+  }
+
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #60a5fa, #a78bfa);
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  @keyframes pulse {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: .7;
+    }
+  }
+
+  .theme-card {
+    background: var(--card);
+    color: var(--card-fg);
+    border: 1px solid var(--border);
+  }
+
+  .theme-bg {
+    background: var(--bg);
+    color: var(--fg);
+  }
 }
