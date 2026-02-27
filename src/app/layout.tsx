@@ -4,6 +4,7 @@ import { AudioToggle } from "@/components/layout/audio-toggle";
 import { ThemeProvider } from "@/components/layout/theme-provider";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { BottomNav } from "@/components/layout/bottom-nav";
+import { PasswordGate } from "@/components/layout/password-gate";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,11 +28,13 @@ export default function RootLayout({
     <html lang="tr" className="dark" suppressHydrationWarning>
       <body className="antialiased">
         <ThemeProvider>
-          <BackgroundAudio />
-          <AudioToggle />
-          <ThemeToggle />
-          {children}
-          <BottomNav />
+          <PasswordGate>
+            <BackgroundAudio />
+            <AudioToggle />
+            <ThemeToggle />
+            {children}
+            <BottomNav />
+          </PasswordGate>
         </ThemeProvider>
       </body>
     </html>
