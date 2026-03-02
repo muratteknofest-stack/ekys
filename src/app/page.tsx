@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Target, Trophy, ChevronRight, AlertTriangle, BookOpen, Brain, LogOut, ArrowRight, ShieldAlert, Gamepad2 } from 'lucide-react';
+import { Target, Trophy, ChevronRight, AlertTriangle, BookOpen, Brain, LogOut, ArrowRight, ShieldAlert, Gamepad2, Sparkles } from 'lucide-react';
 import CountdownTimer from '@/components/dashboard/countdown-timer';
 import { useUserStore, CategoryStats } from '@/store/userStore';
 import Link from 'next/link';
@@ -120,10 +120,28 @@ export default function Home() {
         </header>
 
         {/* Aksiyon Kartları */}
-        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 sm:gap-6 mb-8 sm:mb-12">
           <div className="sm:col-span-2 lg:col-span-2">
             <CountdownTimer />
           </div>
+
+          <Link href="/maarif" className="group sm:col-span-1">
+            <div className="glass-dark p-6 sm:p-8 rounded-[2rem] h-full border border-purple-500/20 hover:border-purple-500/50 transition-all duration-500 overflow-hidden relative flex flex-col justify-center bg-gradient-to-br from-purple-500/10 to-transparent">
+              <div className="absolute top-2 right-2 flex">
+                <span className="bg-purple-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase animate-pulse">YENİ</span>
+              </div>
+              <div className="absolute top-0 right-0 p-6 sm:p-8 text-purple-500/20 group-hover:text-purple-500 transition-colors">
+                <Sparkles size={48} className="sm:w-16 sm:h-16" />
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-bold mb-2 sm:mb-3">Maarif Modeli</h3>
+              <p className="text-[var(--muted)] text-sm sm:text-lg mb-4 sm:mb-6">
+                Modeli en baştan adım adım kavra! Kartlar, testler ve sunumlar.
+              </p>
+              <div className="mt-auto inline-flex items-center gap-2 text-purple-400 font-bold group-hover:translate-x-2 transition-transform bg-purple-500/10 py-2 sm:py-3 px-4 sm:px-6 rounded-full w-max border border-purple-500/20 text-sm sm:text-base">
+                Öğrenmeye Başla <ArrowRight size={18} />
+              </div>
+            </div>
+          </Link>
 
           <Link href="/ogren" className="group sm:col-span-1">
             <div className="glass-dark p-6 sm:p-8 rounded-[2rem] h-full border border-emerald-500/20 hover:border-emerald-500/50 transition-all duration-500 overflow-hidden relative flex flex-col justify-center bg-gradient-to-br from-emerald-500/10 to-transparent">

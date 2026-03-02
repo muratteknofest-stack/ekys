@@ -2,11 +2,12 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, BookOpen, Target, Gamepad2 } from 'lucide-react';
+import { Home, BookOpen, Target, Gamepad2, Sparkles } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const NAV_ITEMS = [
     { href: '/', label: 'Ana Sayfa', icon: Home },
+    { href: '/maarif', label: 'Maarif', icon: Sparkles },
     { href: '/ogren', label: 'Öğren', icon: BookOpen },
     { href: '/antrenman', label: 'Antrenman', icon: Target },
     { href: '/oyun', label: 'Oyun', icon: Gamepad2 },
