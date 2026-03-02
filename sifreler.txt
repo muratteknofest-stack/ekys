@@ -1,0 +1,126 @@
+============================================
+   MEB EKYS 2026 - UYGULAMA ŞİFRELERİ
+============================================
+
+🔗 Uygulama Adresi: (Vercel URL'nizi buraya ekleyin)
+
+📋 Her kullanıcıya listeden BİR şifre verin.
+   Bir kez giriş yapan kullanıcıdan tekrar şifre istenmez.
+
+--------------------------------------------
+ #    ŞİFRE           GRUP
+--------------------------------------------
+  1.  ekys2026         Genel
+  2.  mudur2026        Genel
+  3.  sinav2026        Genel
+--------------------------------------------
+  4.  yonetici01       Yönetici
+  5.  yonetici02       Yönetici
+  6.  yonetici03       Yönetici
+  7.  yonetici04       Yönetici
+  8.  yonetici05       Yönetici
+  9.  yonetici06       Yönetici
+ 10.  yonetici07       Yönetici
+ 11.  yonetici08       Yönetici
+ 12.  yonetici09       Yönetici
+ 13.  yonetici10       Yönetici
+--------------------------------------------
+ 14.  basari01         Başarı
+ 15.  basari02         Başarı
+ 16.  basari03         Başarı
+ 17.  basari04         Başarı
+ 18.  basari05         Başarı
+ 19.  basari06         Başarı
+ 20.  basari07         Başarı
+--------------------------------------------
+ 21.  hazirlik01       Hazırlık
+ 22.  hazirlik02       Hazırlık
+ 23.  hazirlik03       Hazırlık
+ 24.  hazirlik04       Hazırlık
+ 25.  hazirlik05       Hazırlık
+ 26.  hazirlik06       Hazırlık
+ 27.  hazirlik07       Hazırlık
+ 28.  hazirlik08       Hazırlık
+ 29.  hazirlik09       Hazırlık
+ 30.  hazirlik10       Hazırlık
+--------------------------------------------
+ 31.  ogretmen01       Öğretmen
+ 32.  ogretmen02       Öğretmen
+ 33.  ogretmen03       Öğretmen
+ 34.  ogretmen04       Öğretmen
+ 35.  ogretmen05       Öğretmen
+ 36.  ogretmen06       Öğretmen
+ 37.  ogretmen07       Öğretmen
+ 38.  ogretmen08       Öğretmen
+ 39.  ogretmen09       Öğretmen
+ 40.  ogretmen10       Öğretmen
+--------------------------------------------
+ 41.  meb2026a         MEB
+ 42.  meb2026b         MEB
+ 43.  meb2026c         MEB
+ 44.  meb2026d         MEB
+ 45.  meb2026e         MEB
+ 46.  meb2026f         MEB
+ 47.  meb2026g         MEB
+ 48.  meb2026h         MEB
+ 49.  meb2026i         MEB
+ 50.  meb2026j         MEB
+--------------------------------------------
+ 51.  egitim01         Eğitim
+ 52.  egitim02         Eğitim
+ 53.  egitim03         Eğitim
+ 54.  egitim04         Eğitim
+ 55.  egitim05         Eğitim
+ 56.  egitim06         Eğitim
+ 57.  egitim07         Eğitim
+ 58.  egitim08         Eğitim
+ 59.  egitim09         Eğitim
+ 60.  egitim10         Eğitim
+--------------------------------------------
+ 61.  okul2026a        Okul
+ 62.  okul2026b        Okul
+ 63.  okul2026c        Okul
+ 64.  okul2026d        Okul
+ 65.  okul2026e        Okul
+ 66.  okul2026f        Okul
+ 67.  okul2026g        Okul
+ 68.  okul2026h        Okul
+ 69.  okul2026i        Okul
+ 70.  okul2026j        Okul
+--------------------------------------------
+ 71.  lider01          Lider
+ 72.  lider02          Lider
+ 73.  lider03          Lider
+ 74.  lider04          Lider
+ 75.  lider05          Lider
+ 76.  lider06          Lider
+ 77.  lider07          Lider
+ 78.  lider08          Lider
+ 79.  lider09          Lider
+ 80.  lider10          Lider
+--------------------------------------------
+ 81.  aday2026a        Aday
+ 82.  aday2026b        Aday
+ 83.  aday2026c        Aday
+ 84.  aday2026d        Aday
+ 85.  aday2026e        Aday
+ 86.  aday2026f        Aday
+ 87.  aday2026g        Aday
+ 88.  aday2026h        Aday
+ 89.  aday2026i        Aday
+ 90.  aday2026j        Aday
+--------------------------------------------
+ 91.  hedef01          Hedef
+ 92.  hedef02          Hedef
+ 93.  hedef03          Hedef
+ 94.  hedef04          Hedef
+ 95.  hedef05          Hedef
+ 96.  hedef06          Hedef
+ 97.  hedef07          Hedef
+ 98.  hedef08          Hedef
+ 99.  hedef09          Hedef
+100.  hedef10          Hedef
+--------------------------------------------
+
+⚠️ Bu dosyayı güvenli bir yerde saklayın.
+   Şifreler büyük/küçük harf duyarsızdır.
